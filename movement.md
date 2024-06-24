@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
 ### Important Functions :
 
-forward(): Orders the PiCar-X go forward at a given speed.
+forward: Orders the PiCar-X go forward at a given speed.
 
 set_dir_servo_angle: Turns the Steering servo to a specific angle.
 
