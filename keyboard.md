@@ -16,8 +16,8 @@ a: Turn left
 </li>
 <li>
 s: Backward
-<li>
 </li>
+<li>
 d: Turn right
 </li>
 <li>
