@@ -1,0 +1,8 @@
+### PiCar-X Movement
+
+Use the example script to make the car move - 
+
+````
+cd ~/picar-x/example
+sudo python3 1.move.py
+````
