@@ -37,7 +37,7 @@ ctrl + c: Press twice to exit the program
 </li>
 
 
-#Code:
+# Code:
 
 ````
 from picarx import Picarx
