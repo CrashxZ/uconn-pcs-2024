@@ -13,9 +13,14 @@ Vilib.qrcode_detect_switch(True)
 
 def qrcode_detect():
     while True:
+        key = readchar.readkey().lower()
+        if key == 'q' or  key == readchar.key.CTRL_C:
+            Vilib.camera_close()
+            break
         text = Vilib.detect_obj_parameter['qr_data']
         print(text)
         sleep(0.5)
+    Vilib.camera_close()
 
 
 qrcode_detect()

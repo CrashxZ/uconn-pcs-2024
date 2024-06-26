@@ -2,6 +2,7 @@
 from pydoc import text
 from vilib import Vilib
 from time import sleep, time, strftime, localtime
+import readchar
 
 
 Vilib.camera_start(vflip=False,hflip=False) #
@@ -18,6 +19,10 @@ def detect_color(color):
 color_list = ['red', 'green', 'blue', 'yellow', 'orange', 'purple']
 
 while True:
+    key = readchar.readkey().lower()
+    if key == 'q' or  key == readchar.key.CTRL_C:
+        Vilib.camera_close()
+        break
     for color in color_list:
         detected = detect_color(color)
         if detected:
@@ -25,5 +30,8 @@ while True:
         else:
             print(f'{color} not detected')
         sleep(1)
+
+
+
     
     
